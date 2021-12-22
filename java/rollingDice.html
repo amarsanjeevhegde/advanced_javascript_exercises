@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+
+<style>
+
+button {
+    padding: 16px 24px;
+}
+
+</style>
+
+</head>
+<body>
+
+    <button class="roller" onclick="counter=20;rollTheDice()">Roll</button>
+    <h2 class="number">0</h2>
+    
+</body>
+
+<script>
+
+    function rollTheDice() {
+        var x = Math.floor(Math.random()*10)
+        document.querySelector(".number").innerHTML = x; 
+        if (--counter>0) setTimeout(rollTheDice, 100); 
+    }
+
+   
+</script>
+
+</html>

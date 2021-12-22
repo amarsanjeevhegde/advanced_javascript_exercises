@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Side CSS Scrolling</title>
+
+        <style>
+         .gallery {
+            border: 1px solid rgba(129, 129, 129, 0.527);
+            padding: 1rem;
+            display: flex;
+            overflow-x: scroll;
+            scroll-padding: 0 50%;
+            scroll-snap-type: x mandatory;
+          }
+          
+          li {
+            scroll-snap-align: center;
+            display: inline-block;
+            height: 35vh;
+            border-radius: 3px;
+            font-size: 0;
+            margin-right: 3rem;
+          }   
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1> CSS horizontal scrolling </h1>
+        
+        <ul class="gallery">
+            <li>color1</li>
+            <li>color2</li>
+            <li>color3</li>
+            <li>color4</li>
+            <li>color5</li>
+            <li>color6</li>
+            <li>color7</li>
+            <li>color8</li>
+            <li>color9</li>
+            <li>color10</li>
+            <li>color11</li>
+            <li>color12</li>
+            <li>color13</li>
+            <li>color14</li>
+            <li>color15</li>
+            <li>color16</li>
+            <li>color17</li>
+            <li>color18</li>
+            <li>color19</li>
+            <li>color20</li>       
+    
+        </ul>
+
+        <!-- insert random colors to the links each time -->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.js"></script>
+        <script src="./scrolling.js"></script>
+    </body>
+
+</html>

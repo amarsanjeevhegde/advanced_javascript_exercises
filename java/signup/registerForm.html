@@ -1,0 +1,44 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Registeration Page </title>  
+<link href="logRegPage.css" rel="stylesheet">
+ 
+</head>    
+<body>    
+    <center> <h1> Registeration Form </h1> </center>   
+    <form name = 'myform'>  
+        <div class="container"> 
+            
+            <label>Firstname : </label>   
+            <input type="text" placeholder="Enter Firstname" name="firstname" value ="Amar" >  
+            <label>Lastname : </label>   
+            <input type="text" placeholder="Enter Lastname" name="lastname" value="Hegde">    
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" value="ash1234" >  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" value="This_is_my_password" >  
+            <button type="submit" onclick="check(); return false">Register</button>
+            <a href="./loginForm.html"> Login </a>     
+            <!-- note that return false after the function calls is vital to stop the page-->
+            
+        </div>   
+    </form>
+    <p>Submit the form and display it on the screen</p>
+    <p> Firstname: <p id='f1'></p> </p>
+    <p> Lastname: <p id='f2'></p> </p>
+    <p> Username: <p id='f3'></p> </p>
+    <p> password: <p id='f4'></p> </p>
+    
+    <script>
+        function check() {
+            document.getElementById('f1').innerHTML = document.myform.firstname.value;
+            document.getElementById('f2').innerHTML = document.myform.lastname.value;
+            document.getElementById('f3').innerHTML = document.myform.username.value;
+            document.getElementById('f4').innerHTML = document.myform.password.value;
+        }
+    </script>
+</body>   
+
+</html>  
